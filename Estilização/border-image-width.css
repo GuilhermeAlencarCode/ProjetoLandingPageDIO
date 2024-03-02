@@ -1,0 +1,23 @@
+* {
+    font-family: Roboto;
+}
+
+.exemplo {
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    border: 30px solid;
+   }
+
+#exemplo-1 {
+    border-image-source: url(exemplo02.jpg);
+    border-image-repeat: round;
+    border-image-slice: 169;
+    border-image-width: 10px 20px 30px 40px; /* valores em porcentagem, e + */
+}
+
+#exemplo-2 {
+    border-image-source: linear-gradient(green, rgb(196, 199, 11));
+    border-image-slice: 10;
+    border-image-width: 10px 20px 30px 40px;
+}

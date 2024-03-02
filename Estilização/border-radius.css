@@ -1,0 +1,13 @@
+* {
+    font-family: Roboto;
+}
+
+.exemplo {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    border: 10px solid red;
+    border-radius: 10px 50px 100px 200px;
+    border-radius: 30px/100px;
+    border-radius: 100%;
+}

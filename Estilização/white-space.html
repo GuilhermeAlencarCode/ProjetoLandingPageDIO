@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha de CSS</title>
+    <style>
+        .exemplo {
+            width: 200px;
+            background-color: chartreuse;
+        }
+
+        span {
+            background-color: seagreen;
+            color: white;
+        }
+
+        #nowrap {
+            white-space: nowrap;
+        }
+
+        #pre {
+            white-space: pre; /* Respeita tanto as quebras de texto quanto o que foi digitado em HTML (Os espaçoes digitados são respeitados) */
+        }
+
+        #pre-line {
+            white-space: pre-line; /* respeita as quebras de texto conforme o limite do elemento e que foi digitado no HTML */
+        }
+
+        #pre-wrap {
+            white-space: pre-wrap; /* Quebra a linha  automaticante */
+        }
+
+        #break-spaces {
+            white-space: break-break-spaces; /* Quebra de linha priorizando sempre o texto abaixo */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Propriedade <code>white-space</code></h1>
+
+    <p>Define como os espaços em branco do texto de um determinado elemento é tratado:</p>
+
+    <i>Exemplos:</i> <br><br>
+
+    <h2>Propriedade <code>white-space: normal;</code></h2>
+    <p id="white-space" class="exemplo">
+    <span>
+        But     ere she from the church- 
+        door stepped She smiled and 
+        told us why: 'It was a wicked 
+         woman's curse', Quoth she, 
+         'and what are care I?'                                                                                                                                                                                                                                     
+         She smiled, and smiled and passed it
+         off Ere from the door she step-                                                                                         
+    </span>
+    </p>
+
+    <h2>Propriedade <code>white-space: nowrap;</code></h2>
+    <p id="nowrap" class="exemplo">
+    <span>
+        But      ere she from the church- 
+        door stepped She smiled and 
+        told us why: 'It was a wicked 
+         woman's curse', Quoth she,                                                                                                                                                           
+         'and what are care I?' She smiled,
+         and smiled and passed it
+         off Ere from the door she step-                                                                                         
+    </span>
+    </p>
+
+    <h2>Propriedade <code>white-space: pre;</code></h2>
+    <p id="pre" class="exemplo">
+    <span>
+        But      ere she from the church- 
+        door stepped She smiled and 
+        told us why: 'It was a wicked 
+         woman's curse', Quoth she,                                                                                                                         
+         'and what are care I?' She smiled,
+         and smiled and passed it
+         off Ere from the door she step-                                                                                         
+    </span>
+    </p>
+
+    <h2>Propriedade <code>white-space: pre-line;</code></h2>
+    <p id="pre-line" class="exemplo">
+    <span>
+        But      ere she from the church- 
+        door stepped She smiled and 
+        told us why: 'It was a wicked 
+         woman's curse', Quoth she,                                                                                                                                                           
+         'and what are care I?' She smiled,<br> 
+         and smiled and passed it
+         off Ere from the door she step-                                                                                         
+    </span>
+    </p>
+
+    <h2>Propriedade <code>white-space: pre-wrap;</code></h2>
+    <p id="pre-wrap" class="exemplo">
+    <span>
+        But      ere she from the church- 
+        door stepped She smiled and 
+        told us why: 'It was a wicked 
+         woman's curse', Quoth she,                                                                                                                                              
+         'and what are care I?' She smiled, 
+         and smiled and passed it
+         >off Ere from the door she step-                                                                                         
+    </span>
+    </p>
+
+    <h2>Propriedade <code>white-space: break-spaces;</code></h2>
+    <p id="break-spaces" class="exemplo">
+    <span>
+        But      ere she from the church- 
+        door stepped She smiled and 
+        told us why: 'It was a wicked 
+         woman's curse', Quoth she,                                              
+         'and what are care I?' She smiled,
+         and smiled and passed it
+         <br>off Ere from the door she step-                                                                                         
+    </span>
+    </p>
+    
+</body>
+</html>

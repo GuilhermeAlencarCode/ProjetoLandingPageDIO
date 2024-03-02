@@ -1,0 +1,21 @@
+* {
+    font-family: Roboto;
+}
+
+.exemplo {
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    border: 30px solid;
+   }
+
+#exemplo-1 {
+    border-image-source: url(exemplo03.jpg);
+    border-image-repeat: repeat;
+    border-image-slice: 169;
+}
+
+#exemplo-2 {
+    border-image-source: linear-gradient(green, rgb(196, 199, 11));
+    border-image-slice: 10;
+}

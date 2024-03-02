@@ -1,0 +1,15 @@
+code {
+    background-color: lightgreen;
+}
+
+#exemplo {
+    font-weight: normal;
+}
+
+#bold {
+    font-weight: bold;
+}
+
+div p { 
+    font-weight: lighter;
+}
